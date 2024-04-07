@@ -1,7 +1,7 @@
 steps:
   # Étape pour construire l'application Spring Boot
   - name: 'gcr.io/cloud-builders/mvn'
-    args: ['build']
+    args: ['package']
 
   # Étape pour construire l'image Docker de l'application
   - name: 'gcr.io/cloud-builders/docker'
