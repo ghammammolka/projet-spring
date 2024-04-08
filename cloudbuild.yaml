@@ -13,4 +13,4 @@ steps:
 
   # Étape pour déployer l'image Docker sur Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['gcloud run deploy '--image', 'gcr.io/$PROJECT_ID/multiplication']   ]
+    args: ['gcloud run deploy '--image', 'gcr.io/$PROJECT_ID/multiplication']
