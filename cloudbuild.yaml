@@ -13,4 +13,4 @@ steps:
 
   # Étape pour déployer l'image Docker sur Cloud Run en spécifiant la région
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['run', 'deploy', 'multiplication', '--image=gcr.io/$PROJECT_ID/multiplication', '--region=non-regional']
+    args: ['run', 'deploy', 'multiplication', '--image=gcr.io/$PROJECT_ID/multiplication', '--region=global']
