@@ -12,5 +12,6 @@ steps:
     args: ['push', 'gcr.io/$PROJECT_ID/multiplication']
 
   # Étape pour déployer l'image Docker sur Cloud Run en spécifiant la région
-  - name: 'gcr.io/cloud-builders/gcloud'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
     args: ['run', 'deploy', 'multiplication', '--image=gcr.io/$PROJECT_ID/multiplication', '--region=us-central1']
